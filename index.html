@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Inscrição</title>
+    <link rel="shortcut icon" href="favicon/favicon-16.png" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -36,66 +39,68 @@
             <input type="text" class="form-control form-control-sm" name="nome_banda" id="nome_banda" placeholder="Nome da Banda">
         </div>
         <div class="mb-2">
-            <label for="nome_integrantes" class="form-label">Nome dos Integrantes (e Idade?)</label>
-            <textarea class="form-control form-control-sm" name="nome_integrantes" id="nome_integrantes" cols="5" rows="5"></textarea>
+            <label for="nome_integrantes" class="form-label">Nome e Idade dos Integrantes da Banda</label>
+            <textarea class="form-control form-control-sm" name="nome_integrantes" id="nome_integrantes" cols="5" rows="5" placeholder="Ex: João [29 Anos]; Pedro [40 Anos]; Bruna [26 Anos]"></textarea>
         </div>
         <div class="row g-3 mb-2">
-            <p>Equipamentos</p>
+            <p>Equipamentos de Apoio</p>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">Bateria</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Bateria [Exceto Pratos e Estantes]</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">X</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Amplificador Guitarra</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">Y</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Cubo Baixo</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">Z</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
             </div>
         </div>
         <div class="row g-3 mb-2">
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">V</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">T</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">A</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
             </div>
             <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="" id="">
-                <label for="" class="form-check-label">U</label>
+                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
             </div>
         </div>
         <div class="row g-3 mb-2">
             <p>Dia da Apresentação</p>
             <div class="col-md-3">
-                <label for="">Primeira Opção</label>
-                <select class="form-select form-select-sm" name="" id="">
-                    <option value="1">Sexta</option>
-                    <option value="2">Sábado</option>
-                    <option value="3">Domingo</option>
+                <label for="dia_apres_1">Primeira Opção</label>
+                <select class="form-select form-select-sm" name="dia_apres_1" id="dia_apres_1">
+                    <option selected>-- Selecione --</option>
+                    <option value="1">Sexta [28/10/2022]</option>
+                    <option value="2">Sábado [29/10/2022]</option>
+                    <option value="3">Domingo [30/10/2022]</option>
                 </select>
             </div>
             <div class="col-md-3">
-                <label for="">Segunda Opção</label>
-                <select  class="form-select form-select-sm" name="" id="">
-                    <option value="1">Sexta</option>
-                    <option value="2">Sábado</option>
-                    <option value="3">Domingo</option>
+                <label for="dia_apres_2">Segunda Opção</label>
+                <select  class="form-select form-select-sm" name="dia_apres_2" id="dia_apres_2">
+                    <option selected>-- Selecione --</option>
+                    <option value="1">Sexta [28/10/2022]</option>
+                    <option value="2">Sábado [29/10/2022]</option>
+                    <option value="3">Domingo [30/10/2022]</option>
                 </select>
             </div>
         </div>
-        <div>
+        <div class="mb-3">
             <label for="" class="form-label">Arquivo Audio Visual da Banda</label>
             <input type="file" class="form-control form-control-sm" name="" id="">
             <small class="form-text">[Normas. Link]</small>
@@ -103,37 +108,33 @@
         <div class="row g-3">
             <p>Origem da Banda</p>
             <div class="col-md-3">
-                <label for="" class="form-label">CEP</label>
-                <input type="number" class="form-control form-control-sm" name="" id="">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="number" class="form-control form-control-sm" name="cep" id="cep"  onblur="getDadosEnderecoPorCEP(this.value)">
+                <small class="form-text">Apenas Números</small>
             </div>
         </div>
         <div class="row g-3">
-            <div class="col-md-3">
-                <label for="" class="form-label">Bairro</label>
-                <input type="text" class="form-control form-control-sm" name="" id="">
-            </div>
             <div class="col-md-4">
-                <label for="" class="form-label">Município</label>
-                <input type="text" class="form-control form-control-sm" name="" id="">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control form-control-sm" name="bairro" id="bairro">
             </div>
-            <div class="col-md-2">
-                <label for="" class="form-label">Estado</label>
-                <input type="text" class="form-control form-control-sm" name="" id="">
+            <div class="col-md-5">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control form-control-sm" name="cidade" id="cidade">
             </div>
             <div class="col-md-3">
-                <label for="" class="form-label">X</label>
-                <input type="text" class="form-control form-control-sm" name="" id="">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control form-control-sm" name="estado" id="estado">
             </div>
         </div>
         <div>
             <label for=""  class="form-label">Comentários</label>
             <textarea class="form-control form-control-sm" name="" id="" cols="7" rows="7"></textarea>
         </div>
-        <div>
-            <button  class="btn btn-primary" type="submit">Enviar</button>
+        <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-dark mt-3" type="submit">Enviar</button>
         </div>
     </form>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

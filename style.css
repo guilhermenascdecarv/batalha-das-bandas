@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GrindDeath';
+    src: url(fontes/GrindAndDeath_Demo.ttf);
+}
+
+body {
+    background-color: black;
+    background-image: url(imagens/bt-gd.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    padding: 2%;
+}
+header a {
+    font-family: 'GrindDeath';
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+header a:hover {
+    font-family: 'GrindDeath';
+    color: #0862a1;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+form {
+    margin: 1.5% auto;
+    width: 70%;
+    padding: 2%;
+    background-color: ;
+    border-radius: 23px;
+}
+label {
+    color: white;
+}
+
+@media (max-width: 890px) {
+    body {
+        background-image: url(imagens/bt-md.jpg);
+    }
+}
