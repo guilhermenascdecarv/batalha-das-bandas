@@ -20,66 +20,77 @@
     </header>
     <form>
         <div class="row g-3 mb-2">
-            <div class="col-md-4">
-                <label for="nome_resp" class="form-label">Nome do Responsável</label>
-                <input type="text" class="form-control form-control-sm" name="nome_resp" id="nome_resp" placeholder="Nome">
+            <div class="row g-3 mb-2">
+                <div class="col-md-4">
+                    <label for="nome_resp" class="form-label">Nome do Responsável</label>
+                    <input type="text" class="form-control form-control-sm" name="nome_resp" id="nome_resp" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-8">
+                    <label for="sobrenome_resp" class="form-label">Sobrenome</label>
+                    <input type="text"class="form-control form-control-sm" name="sobrenome_resp" id="sobrenome_resp" placeholder="Sobrenome">
+                </div>
             </div>
-            <div class="form-group col-md-8">
-                <label for="sobrenome_resp" class="form-label">Sobrenome</label>
-                <input type="text"class="form-control form-control-sm" name="sobrenome_resp" id="sobrenome_resp" placeholder="Sobrenome">
+            <div class="mb-2">
+                <label for="email_resp" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-sm" name="email_resp" id="email_resp" placeholder="Email">
             </div>
-        </div>
-        <div class="mb-2">
-            <label for="email_resp" class="form-label">Email</label>
-            <input type="email" class="form-control form-control-sm" name="email_resp" id="email_resp" placeholder="Email">
-        </div>
-        <div class="mb-2">
-            <label for="nome_banda" class="form-label">Nome da Banda</label>
-            <input type="text" class="form-control form-control-sm" name="nome_banda" id="nome_banda" placeholder="Nome da Banda">
-        </div>
-        <div class="mb-2">
-            <label for="nome_integrantes" class="form-label">Nome e Idade dos Integrantes da Banda</label>
-            <textarea class="form-control form-control-sm" name="nome_integrantes" id="nome_integrantes" cols="5" rows="5" placeholder="Ex: João [29 Anos]; Pedro [40 Anos]; Bruna [26 Anos]"></textarea>
-        </div>
-        <div class="row g-3 mb-2">
-            <p>Equipamentos de Apoio</p>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Bateria [Exceto Pratos e Estantes]</label>
+            <div class="mb-2">
+                <label for="nome_banda" class="form-label">Nome da Banda</label>
+                <input type="text" class="form-control form-control-sm" name="nome_banda" id="nome_banda" placeholder="Nome da Banda">
             </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Amplificador Guitarra</label>
+            <div class="mb-2">
+                <label for="nome_integrantes" class="form-label">Nome e Idade dos Integrantes da Banda</label>
+                <textarea class="form-control form-control-sm" name="nome_integrantes" id="nome_integrantes" cols="5" rows="5" placeholder="Ex: João [29 Anos]; Pedro [40 Anos]; Bruna [26 Anos]"></textarea>
             </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Cubo Baixo</label>
-            </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
+            <div class="mb-3">
+                <label for="" class="form-label">Arquivo Audio Visual da Banda</label>
+                <input type="file" class="form-control form-control-sm" name="" id="">
+                <small class="form-text"><a href="#" class="form-text">[Normas]</a></small>
             </div>
         </div>
-        <div class="row g-3 mb-2">
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio_1" id="equip_apoio">
-                <label for="equip_apoio_1" class="form-check-label">Pedestais [Max. 3]</label>
+        <hr>
+        <div class="row g-3 mb-2 pt-4 pb-4">
+            <h2>Equipamentos Necessários e Apoio</h2>
+            <div class="row g-3 mb-2">
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Técnico de Som</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Microfonação na Bateria</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Bateria [Exceto Pratos e Estantes]</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Amplificador Guitarra</label>
+                </div>
             </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio_2" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
-            </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
-            </div>
-            <div class="form-check col-md-3">
-                <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
-                <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
+            <div class="row g-3 mb-2">
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio_1" id="equip_apoio">
+                    <label for="equip_apoio_1" class="form-check-label">Cubo Baixo</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio_2" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Cabos P10 [Max. 3]</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Pedestais [Max. 3]</label>
+                </div>
+                <div class="form-check col-md-3">
+                    <input type="checkbox" class="form-check-input" name="equip_apoio" id="equip_apoio">
+                    <label for="equip_apoio" class="form-check-label">Troca de Instrumento</label>
+                </div>
             </div>
         </div>
-        <div class="row g-3 mb-2">
-            <p>Dia da Apresentação</p>
+        <hr>
+        <div class="row g-3 mb-2 pt-4 pb-4">
+            <h2>Dia da Apresentação</h2>
             <div class="col-md-3">
                 <label for="dia_apres_1">Primeira Opção</label>
                 <select class="form-select form-select-sm" name="dia_apres_1" id="dia_apres_1">
@@ -99,41 +110,60 @@
                 </select>
             </div>
         </div>
-        <div class="mb-3">
-            <label for="" class="form-label">Arquivo Audio Visual da Banda</label>
-            <input type="file" class="form-control form-control-sm" name="" id="">
-            <small class="form-text">[Normas. Link]</small>
-        </div>
-        <div class="row g-3">
-            <p>Origem da Banda</p>
-            <div class="col-md-3">
-                <label for="cep" class="form-label">CEP</label>
-                <input type="number" class="form-control form-control-sm" name="cep" id="cep"  onblur="getDadosEnderecoPorCEP(this.value)">
-                <small class="form-text">Apenas Números</small>
+        <hr>
+        <div class="row g-3 mb-2 pt-3">
+            <h2>Origem da Banda</h2>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="number" class="form-control form-control-sm" name="cep" id="cep"  onblur="getDadosEnderecoPorCEP(this.value)">
+                    <small class="form-text">Apenas Números</small>
+                </div>
+                <div class="col-md-9 pt-3">
+                    <p>Dados de endereço por CEP são consultados na API do <a href="">ViaCEP</a>, o webservice para consultar Códigos de Endereçamento Postal do Brasil</p>
+                </div>
+            </div>
+            <div class="row g-3 pb-4">
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control form-control-sm" name="bairro" id="bairro">
+                </div>
+                <div class="col-md-5">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control form-control-sm" name="cidade" id="cidade">
+                </div>
+                <div class="col-md-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control form-control-sm" name="estado" id="estado">
+                </div>
             </div>
         </div>
-        <div class="row g-3">
-            <div class="col-md-4">
-                <label for="bairro" class="form-label">Bairro</label>
-                <input type="text" class="form-control form-control-sm" name="bairro" id="bairro">
-            </div>
-            <div class="col-md-5">
-                <label for="cidade" class="form-label">Cidade</label>
-                <input type="text" class="form-control form-control-sm" name="cidade" id="cidade">
-            </div>
-            <div class="col-md-3">
-                <label for="estado" class="form-label">Estado</label>
-                <input type="text" class="form-control form-control-sm" name="estado" id="estado">
-            </div>
-        </div>
-        <div>
+        <hr>
+        <div class="pt-3">
             <label for=""  class="form-label">Comentários</label>
-            <textarea class="form-control form-control-sm" name="" id="" cols="7" rows="7"></textarea>
+            <textarea class="form-control form-control-sm" name="comentarios" id="" cols="7" rows="7"></textarea>
         </div>
         <div class="d-grid col-4 mx-auto">
-            <button class="btn btn-dark mt-3" type="submit">Enviar</button>
+            <button class="btn btn-dark mt-3" type="submit" name="enviar">Enviar Inscrição</button>
         </div>
     </form>
+    <footer>
+        <div class="row g-3 mb-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <h2>Formulário desenvolvido por Guilherme Nascimento de Carvalho</h2>
+            </div>
+            <div class="col-md-3">
+                <a href="https://github.com/guilhermenascdecarv" target="_blank">
+                    <img class="icons_redes" src="icons_redes/github_white.png" alt="Github" width="40px">
+                </a>
+                <a href="https://www.linkedin.com/in/guilhermenascdecarv/" target="_blank">
+                    <img class="icons_redes" src="icons_redes/linkedin_white.png" alt="LinkedIn" width="45px">
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
